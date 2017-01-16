@@ -19,3 +19,26 @@
 
 
 
+
+
+
+.uib-carousel {
+	height: 50%;
+	position: relative;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+img.ng-scope {
+	height: 100%;
+	width: 100%;
+	background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}

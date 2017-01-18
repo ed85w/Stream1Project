@@ -7,17 +7,17 @@ angular.module('RouteControllers', [])
       // My slides
       $scope.slides = [
         {
-          image: "img/bobmarley1.jpg",
+          image: "img/croppedbobmarley.jpg",
           // text: "a",
           id: 0
         },
         {
-          image: "img/jimmycliff5.jpg",
+          image: "img/croppedjimmycliff.jpg",
           // text: "b",
           id: 1
         },
         {
-          image: "img/reggae3.jpg",
+          image: "img/croppedreggae.jpg",
           // text: "c",
           id: 2
         },

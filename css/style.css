@@ -1,15 +1,44 @@
-.navbar-default {
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+
+}
+
+.navbar.navbar-default {
 	margin-bottom: 0;
 }
-#homeCarousel {
-	width: 100%;
-	height: 500px;
-	padding: 0;
+
+.navbar .navbar-collapse {
+  text-align: center;
 }
-@media (min-width: 1200px) {
+
+.navbar-default .navbar-nav>li>a {
+    padding: 15px 25px;
+}
 
 
 
 
 
-} /*end of @media (min-width: 1200px) */
+
+.uib-carousel {
+	height: 50%;
+	position: relative;
+}
+
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+img.ng-scope {
+	height: 100%;
+	width: 100%;
+	background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}

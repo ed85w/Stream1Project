@@ -1,4 +1,3 @@
-// angular.module('BandSite', ['ngRoute', 'RouteControllers']); ORIGINAL MODULE
 
 angular.module('BandSite', ['ngRoute', 'RouteControllers','ngAnimate','ui.bootstrap']);
  

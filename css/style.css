@@ -1,3 +1,5 @@
+/*NAVBAR STYLING*/
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
@@ -18,27 +20,46 @@
 }
 
 
-
-
-
-
-.uib-carousel {
-	height: 50%;
-	position: relative;
-}
-
-.item,
-.active,
-.carousel-inner {
-    height: 100%;
-}
-
-img.ng-scope {
-	height: 100%;
+/*HOMEPAGE BACKGROUND IMAGE ROTATOR*/
+#rotatorContainer {
+	border: 2px solid red;
 	width: 100%;
+	height: 300px;		
+	position: relative;
+}	
+
+#rotatorImg1{
+	background-image: url("img/bobmarley1.jpg");
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#rotatorImg2{
+	background-image: url("img/jimmycliff5.jpg");
+	width: 100%;
+	height: 100%;
+	position: absolute;
 	background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
+#rotatorImg3{
+	background-image: url("img/natty1.jpg");
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+	

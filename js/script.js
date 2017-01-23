@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-
+// HOME PAGE
 	// Function to loop through background-images
 	function imageLoop (){
 		$("#rotatorContainer div").last().fadeOut(500,function(){
@@ -11,5 +11,11 @@ $(document).ready(function(){
 	setInterval(function(){
 		imageLoop();
 	}, 5000);
+
+// BAND PAGE
+
+		
+
+
 
 });

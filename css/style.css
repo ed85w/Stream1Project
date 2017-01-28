@@ -5,16 +5,22 @@ body {
 	/*background-color: #333;*/
 	height: 100%;
 	width: 100%;
-	background-image: url("/img/reggaeback.jpg");
+	background-color: black;
+/*	background-image: url("/img/reggaeback.jpg");
 	background-position: center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-	-o-background-size: cover;
+	-o-background-size: cover;*/
 	font-family: "Nunito";
 }
 
-
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*display: none;*/
+	opacity: 0;
+}
 
 /*HOMEPAGE */
 
@@ -130,6 +136,10 @@ div h1 {
 	margin-left: auto;
 }
 
+.img-responsive {
+	border-radius: 5px;
+}
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
@@ -158,25 +168,28 @@ div h1 {
 .bandpage-paragraphs{
 	position: absolute;
 	overflow: hidden;
-	left: 15px;
 	top: 0;
 	opacity: 0;
-	width: 85%;
-	margin: 10px;
-	border: 1px solid red;
+	width: 95%;
+	height: 100%;
+	/*border: 1px solid red;*/
+	padding: 80px 30px 0 30px;
 }
-.bandpage-paragraphs:focus, 
+/*.bandpage-paragraphs:focus, 
 .bandpage-paragraphs:hover,
-.bandpage-paragraphs:active {
+.bandpage-paragraphs:active,*/
+.test {
 	-webkit-transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
 	transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
 	opacity: 1;
 	color: red;
 }
 
-.bandpage-image-container{
-	/*padding: 10px;*/
-
+.grey-image{
+	-webkit-filter:grayscale(1);
+	-webkit-transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	-webkit-filter:grayscale(1);
 }
 
 }
@@ -195,7 +208,7 @@ div h1 {
 img.img-responsive {
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 5px;
+	/*border-radius: 5px;*/
 }
 
 }
@@ -203,6 +216,13 @@ img.img-responsive {
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 /*// css specific properties col-xs-**/
+
+/*BANDPAGE*/
+img.img-responsive {
+	margin-left: auto;
+	margin-right: auto;
+	/*border-radius: 5px;*/
+}
 
 }
  

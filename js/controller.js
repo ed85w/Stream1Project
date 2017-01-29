@@ -41,25 +41,26 @@ angular.module('RouteControllers', [])
 
 		  $scope.groups = [
 		    {
-		      title: 'Dynamic Group Header - 123',
-		      content: 'Dynamic Group Body - 1',
+		      date: '1st Jan 2017',
+		      city: 'New York',
+		      venue: 'place a',
+		      // map:
 		    },
 		    {
-		      title: 'Dynamic Group Header - 2',
-		      content: 'Dynamic Group Body - 2'
+		      date: '2nd Feb 2017',
+		      city: 'Mexico City',
+		      venue: 'place a',
+		      // map:
 		    },
 		    {
-		    	title: "i've added this one",
-		    	content: "dwfnweof"
+		      date: '3rd March 2017',
+		      city: 'Havana',
+		      venue: 'place c',
+		      // map:
 		    }
 		  ];
 
 		  $scope.items = ['Item 1A', 'Item 2', 'Item 3'];
-
-		  $scope.addItem = function() {
-		    var newItemNo = $scope.items.length + 1;
-		    $scope.items.push('Item ' + newItemNo);
-		  };
 
 		  $scope.status = {
 		    isCustomHeaderOpen: false,

@@ -1,5 +1,5 @@
 
-angular.module('BandSite', ['ngRoute', 'RouteControllers','ngAnimate','ui.bootstrap']);
+angular.module('BandSite', ['ngRoute', 'RouteControllers','ngAnimate','ui.bootstrap','ngSanitize']);
  
 angular.module('BandSite').config(function($routeProvider) {
  
@@ -10,6 +10,10 @@ angular.module('BandSite').config(function($routeProvider) {
     .when('/band', {
         templateUrl: 'templates/band.html',
         controller: 'BandController'
+    })
+    .when('/gigs', {
+    	templateUrl: 'templates/gigs.html',
+    	controller: 'GigsController'
     });
 });
 

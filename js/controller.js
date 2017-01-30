@@ -35,7 +35,7 @@ angular.module('RouteControllers', [])
 		});
 
     })
-    .controller('GigsController', function($scope){
+    .controller('GigsController', function($scope, $sce){
 
     	$scope.oneAtATime = true;
 
@@ -43,15 +43,15 @@ angular.module('RouteControllers', [])
 		    {
 		      date: '1st Jan 2017',
 		      city: 'New York',
-		      venue: 'place a',
-		      // map:
+		      venue: 'Midtown Loft and Terrace',
+		      map: $sce.trustAsResourceUrl("https://www.google.com/maps/embed/v1/place?q=Midtown%20Loft%20%26%20Terrace%2C%20267%205th%20Ave%2C%20New%20York%2C%20NY%2010016%2C%20USA&key=AIzaSyB2Ash-HsNf33hrwvEO_1xdMwhaO1wPTA8")
 		    },
 		    {
 		      date: '2nd Feb 2017',
 		      city: 'Mexico City',
-		      venue: 'place a',
-		      // map:
-		    },
+		      venue: 'Zinco Jazz Club',
+		      map: 
+		   },
 		    {
 		      date: '3rd March 2017',
 		      city: 'Havana',
@@ -60,7 +60,7 @@ angular.module('RouteControllers', [])
 		    }
 		  ];
 
-		  $scope.items = ['Item 1A', 'Item 2', 'Item 3'];
+		  // $scope.items = ['Item 1A', 'Item 2', 'Item 3'];
 
 		  $scope.status = {
 		    isCustomHeaderOpen: false,

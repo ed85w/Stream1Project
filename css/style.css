@@ -22,6 +22,35 @@ hr {
 	opacity: 0;
 }
 
+/*NAVBAR STYLING*/
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  /*background-color: white;*/
+
+}
+
+.navbar.navbar-inverse {
+	margin-bottom: 0;
+	border-radius: 0;
+	/*background-color: white;*/
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+  /*background-color: white;*/
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    padding: 15px 25px;
+    /*font-family: Nunito;*/
+    font-size:12px;
+    font-weight: bold;
+    /*background-color: white;*/
+}
+
 /*HOMEPAGE */
 
 /*HOMEPAGE BACKGROUND IMAGE ROTATOR*/
@@ -83,35 +112,6 @@ hr {
 }
 
 	
-/*NAVBAR STYLING*/
-
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-  /*background-color: white;*/
-
-}
-
-.navbar.navbar-inverse {
-	margin-bottom: 0;
-	border-radius: 0;
-	/*background-color: white;*/
-}
-
-.navbar .navbar-collapse {
-  text-align: center;
-  /*background-color: white;*/
-}
-
-.navbar-inverse .navbar-nav>li>a {
-    padding: 15px 25px;
-    /*font-family: Nunito;*/
-    font-size:12px;
-    font-weight: bold;
-    /*background-color: white;*/
-}
-
 /*BANDPAGE*/
 
 span.bandpage-member-header{
@@ -138,6 +138,12 @@ div h1 {
 
 .img-responsive {
 	border-radius: 5px;
+}
+
+/*GIGS PAGE*/
+
+div.panel-default.ng-scope.ng-isolate-scope.panel {
+	border-radius: 0;
 }
 
 /*==================================================

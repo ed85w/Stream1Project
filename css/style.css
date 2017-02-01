@@ -144,7 +144,10 @@ div h1 {
 
 div.panel-default.ng-scope.ng-isolate-scope.panel {
 	border-radius: 0;
+	margin: 20px 0px 20px 0px;
 }
+
+
 
 /*==================================================
 =            Bootstrap 3 Media Queries             =

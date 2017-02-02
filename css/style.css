@@ -147,6 +147,11 @@ div.panel-default.ng-scope.ng-isolate-scope.panel {
 	margin: 20px 0px 20px 0px;
 }
 
+#gigs-page-image-grid {
+	padding-top: 25px;
+	display: none;
+}
+
 
 
 /*==================================================
@@ -201,12 +206,24 @@ div.panel-default.ng-scope.ng-isolate-scope.panel {
 	-webkit-filter:grayscale(1);
 }
 
+/*GIGS PAGE*/
+
+#gigs-page-image-grid {
+	display: block;
+}
+
+
 }
 
  
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
 /*// css specific properties col-md-**/
+
+#gigs-page-image-grid {
+	display: block;
+}
+
 }
  
 /* Portrait tablets and small desktops */
@@ -219,6 +236,12 @@ img.img-responsive {
 	margin-right: auto;
 	/*border-radius: 5px;*/
 }
+
+/*GIGS PAGE*/
+
+/*#gigs-page-image-grid {
+	display: block;
+}*/
 
 }
  

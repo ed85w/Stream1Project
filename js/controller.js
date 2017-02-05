@@ -39,6 +39,7 @@ angular.module('RouteControllers', [])
 
     	$scope.oneAtATime = true;
 
+    		// List of gigs and venues etc
 		  $scope.groups = [
 		    {
 		      date: '1st Jan 2017',
@@ -97,5 +98,6 @@ angular.module('RouteControllers', [])
 		    isFirstOpen: true,
 		    isFirstDisabled: false
 		  };
+	});
 
-    });
+    // });

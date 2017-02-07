@@ -6,7 +6,7 @@ body {
 	width: 100%;
 	background-attachment: fixed;
 	/*background-color: black;*/
-	background-image: url(/img/reggaeback1.jpg);
+	background-image: url(/img/reggaeback.jpg);
 	background-size: 100% 100%;
 	background-position: center;
     -webkit-background-size: 100% 100%;
@@ -14,6 +14,13 @@ body {
     background-size: 100% 100%;
     -o-background-size: 100% 100%;
 	font-family: "Nunito";
+
+	color: #e7d506;
+}
+
+div h1 {
+	color: #e7d506;
+	text-align: center;
 }
 
 hr {
@@ -187,6 +194,9 @@ ul.dropdown-menu {
     -o-background-size: cover;
 }
 
+.hide-small {
+	display: none;
+}
 	
 /*BANDPAGE*/
 
@@ -194,10 +204,10 @@ span.bandpage-member-header{
 	font-size: 30px;
 }
 
-div h1 {
+/*div h1 {
 	text-align: center;
 	color: #9d9d9d;
-}
+}*/
 
 .hoverP {
 	/*not visible on mobile & touchscreen devices*/
@@ -246,6 +256,10 @@ div.panel-default.ng-scope.ng-isolate-scope.panel {
 	font-size: 60px;
 }
 
+.hide-small {
+	display: block;
+}
+
 
 /*BANDPAGE*/
 
@@ -272,7 +286,7 @@ div.panel-default.ng-scope.ng-isolate-scope.panel {
 	-webkit-transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
 	transition: all 600ms cubic-bezier(0.47, 0, 0.745, 0.715);
 	opacity: 1;
-	color: red;
+	color: #e7d506;
 }
 
 .grey-image{
@@ -296,6 +310,14 @@ div.panel-default.ng-scope.ng-isolate-scope.panel {
 @media (min-width: 992px) and (max-width: 1199px) {
 /*// css specific properties col-md-**/
 
+/*HOMEPAGE*/
+
+.hide-small {
+	display: block;
+}
+
+/*GIGSPAGE*/
+
 #gigs-page-image-grid {
 	display: block;
 }
@@ -306,10 +328,12 @@ div.panel-default.ng-scope.ng-isolate-scope.panel {
 @media (min-width: 768px) and (max-width: 991px) {
 /*// css specific properties col-sm-**/
 
+
 /*BANDPAGE*/
 img.img-responsive {
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 20px;
 	/*border-radius: 5px;*/
 }
 
@@ -329,6 +353,7 @@ img.img-responsive {
 img.img-responsive {
 	margin-left: auto;
 	margin-right: auto;
+	padding-left: 20px;
 	/*border-radius: 5px;*/
 }
 

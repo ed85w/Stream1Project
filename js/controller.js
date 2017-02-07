@@ -45,7 +45,8 @@ angular.module('RouteControllers', [])
 		      date: '1st Jan 2017',
 		      city: 'New York',
 		      venue: 'Midtown Loft and Terrace',
-		      map: $sce.trustAsResourceUrl("https://www.google.com/maps/embed/v1/place?q=Midtown%20Loft%20%26%20Terrace%2C%20267%205th%20Ave%2C%20New%20York%2C%20NY%2010016%2C%20USA&key=AIzaSyB2Ash-HsNf33hrwvEO_1xdMwhaO1wPTA8")
+		      map: $sce.trustAsResourceUrl("https://www.google.com/maps/embed/v1/place?q=Midtown%20Loft%20%26%20Terrace%2C%20267%205th%20Ave%2C%20New%20York%2C%20NY%2010016%2C%20USA&key=AIzaSyB2Ash-HsNf33hrwvEO_1xdMwhaO1wPTA8"),
+		      price: 12.5
 		    },
 		    {
 		      date: '2nd Feb 2017',
@@ -98,6 +99,9 @@ angular.module('RouteControllers', [])
 		    isFirstOpen: true,
 		    isFirstDisabled: false
 		  };
+	})
+	.controller('MusicController', function($scope){
+
 	});
 
     // });

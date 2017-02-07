@@ -14,6 +14,10 @@ angular.module('BandSite').config(function($routeProvider) {
     .when('/gigs', {
     	templateUrl: 'templates/gigs.html',
     	controller: 'GigsController'
+    })
+    .when('/music', {
+        templateUrl: 'templates/music.html',
+        controller: 'MusicController'
     });
 });
 

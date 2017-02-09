@@ -20,17 +20,11 @@ angular.module('RouteControllers', [])
     	
     	$(document).ready(function(){
 			// BAND PAGE
-			$("p.bandpage-paragraphs").mouseenter(function(){
-				if ($(this).css("position")=="absolute") {
-					$(this).toggleClass("show-paragraphs");
-					$(this).siblings("img").toggleClass("grey-image");
-				}
+			$(".bandpage-image-container").mouseover(function(){
+					$(this).addClass("show-paragraphs");
 			})
-			$("p.bandpage-paragraphs").mouseleave(function(){
-				if ($(this).css("position")=="absolute") {
-					$(this).toggleClass("show-paragraphs");
-					$(this).siblings("img").toggleClass("grey-image");
-				}
+			$(".bandpage-image-container").mouseout(function(){
+					$(this).removeClass("show-paragraphs");
 			})
 		});
 

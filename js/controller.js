@@ -96,6 +96,8 @@ angular.module('RouteControllers', [])
 	})
 	.controller('MusicController', function($scope){
 
+	})
+	.controller('ContactController', function($scope){
+
 	});
 
-    // });

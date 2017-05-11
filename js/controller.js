@@ -4,7 +4,7 @@ angular.module('RouteControllers', [])
     	$(document).ready(function(){
 			// Function to loop through background-images
 			function imageLoop (){
-				$("#rotatorContainer div").last().fadeOut(500,function(){
+				$("#rotatorContainer div").last().fadeOut(1000,function(){
 					$(this).insertBefore($("#rotatorContainer div").first()).show();
 				});
 			}
@@ -97,7 +97,6 @@ angular.module('RouteControllers', [])
 	.controller('MusicController', function($scope){
 
 	})
-	.controller('ContactController', function($scope){
+	.controller('ContactController', function ($scope){
 
 	});
-

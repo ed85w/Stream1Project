@@ -21,7 +21,30 @@
                     <p data-ng-show="registrationForm.email.$pristine" class="help-block">Enter email address</p>
                 </div>
  
-                <button type="submit" class="btn btn-primary" data-ng-disabled="registrationForm.$invalid" ng-click="$ctrl.open()">Sign Up</button>
+                <button type="submit" class="btn btn-primary" data-ng-disabled="registrationForm.$invalid" data-toggle="modal" data-target="#NewsletterModal">Sign Up</button>
+
+                <!-- MODAL FOR NEWSLETTER SIGN UP -->
+				<div id="NewsletterModal" class="modal fade" role="dialog">
+				  <div class="modal-dialog">
+
+				    <!-- MODAL CONTENT-->
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal">&times;</button>
+				        <h4 class="modal-title">Modal Example</h4>
+				      </div>
+				      <div class="modal-body">
+				        <p>Hello! Unfortunately, as this is a website for a fictional cover band there isn't actually a newsletter/mailing list to sign up for!</p>
+				        <p>This is just an example to show the kind of thing that could be produced.				 
+				        </p>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				      </div>
+				    </div>
+
+				  </div>
+				</div>
             </form>
 		</div>
 		

@@ -1,5 +1,5 @@
 
-angular.module('BandSite', ['ngRoute', 'RouteControllers','ngAnimate','ui.bootstrap','ngSanitize','ContactDirective']);
+var BandSite = angular.module('BandSite', ['ngRoute', 'RouteControllers','ngAnimate','ui.bootstrap','ngSanitize','ContactDirective']);
  
 angular.module('BandSite').config(function($routeProvider) {
  

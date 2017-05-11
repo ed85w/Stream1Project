@@ -18,6 +18,10 @@ body {
 	color: #e7d506;
 }
 
+h1 {
+	font-weight: bolder;
+}
+
 div h1 {
 	color: #e7d506;
 	text-align: center;
@@ -27,7 +31,7 @@ hr {
 	margin-top: 10px;
 	margin-bottom: 10px;
 	/*display: none;*/
-	opacity: 0;
+	opacity: 1;
 }
 
 .visible-hr {
@@ -37,7 +41,14 @@ hr {
 
 }
 
+
+
 /*NAVBAR STYLING*/
+
+/*Navbar dropdown toggles on hover on desktop*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 
 .navbar .navbar-nav {
   display: inline-block;
@@ -141,6 +152,14 @@ ul.dropdown-menu {
 	color: white !important;
 }
 
+/*MODALS*/
+
+div.modal-content {
+	background-image: url(/img/jamaica.jpg);
+}
+
+
+
 /*HOMEPAGE */
 
 /*HOMEPAGE BACKGROUND IMAGE ROTATOR*/
@@ -231,6 +250,7 @@ span.bandpage-member-header{
 
 .img-responsive {
 	border-radius: 5px;
+	width: 100%;
 }
 
 /*GIGS PAGE*/
@@ -253,6 +273,9 @@ div.panel-default.ng-scope.ng-isolate-scope.panel {
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
 /*// css specific properties col-lg-**/
+
+
+
 
 /*HOMEPAGE*/
 
@@ -297,6 +320,8 @@ div.panel-default.ng-scope.ng-isolate-scope.panel {
 	transition: all 1000ms cubic-bezier(0.47, 0, 0.745, 0.715);
 	opacity: 1;
 	color: #e7d506;
+	text-shadow: 1px 0 0 #333, -1px 0 0 #333, 0 1px 0 #333, 0 -1px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
+
 }
 
 .show-paragraphs img {
@@ -349,6 +374,8 @@ img.img-responsive {
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 /*// css specific properties col-xs-**/
+
+
 
 /*BANDPAGE*/
 img.img-responsive {

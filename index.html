@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-ng-app='BandSite'>
 <head>
-	<title>Cover Band</title>
+	<title>ReggaeBAND!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -10,22 +10,19 @@
     <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-animate/angular-animate.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-touch/angular-touch.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
     <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <!-- <script type="text/javascript" src="bower_components/a0-angular-storage/dist/angular-storage.min.js"></script> -->
-    <script type="text/javascript" src="js/script.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Chewy|Gloria+Hallelujah|Rock+Salt|Shrikhand|Sigmar+One|Nunito" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- <style type="text/css">
-        body {
-            padding-top: 70px;
-        }
-    </style> -->
 </head>
 
 <body>
 
 	<!-- Navbar -->
 
-	<nav class="navbar navbar-default">
+	<nav class="navbar navbar-inverse">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -38,17 +35,17 @@
 	    </div>
 
 	    <div class="collapse navbar-collapse" id="navbar1"> 
-	    	<ul class="nav navbar-nav navbar-default">
-	        	<li><a href="#!/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
-	        	<li><a href="#!/band"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> The Band</a></li>
+	    	<ul class="nav navbar-nav navbar-inverse">
+	        	<li><a href="#!/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>HOME</a></li>
+	        	<li><a href="#!/band"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>THE BAND</a></li>
 	        	<li class="dropdown">
-	        	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>  Music<span class="caret"></span></a>
+	        	<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-music" aria-hidden="true"></span>MUSIC<span class="caret"></span></a>
 	          	<ul class="dropdown-menu">
-	            	<li><a href="#"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> Audio</a></li>
-	            	<li><a href="#"><span class="glyphicon glyphicon-film" aria-hidden="true"></span> Video</a></li>
+	            	<li><a href="#!/music"><span class="glyphicon glyphicon-headphones" aria-hidden="true"></span> AUDIO</a></li>
+	            	<li><a href="#!/music#video"><span class="glyphicon glyphicon-film" aria-hidden="true"></span> VIDEO</a></li>
 	        	</ul>
-	        	<li><a href="#"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Upcoming Gigs</a></li>
-	        	<li><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
+	        	<li><a href="#!/gigs"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> UPCOMING GIGS</a></li>
+	        	<li><a href="#!/contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> CONTACT</a></li>
 	        </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -58,6 +55,19 @@
 
 	</div>
 
+	
+    <footer class="footer">
+        <div class="container-fluid">
+            <ul class="social">
+                <li> <a href="https://www.facebook.com/ReggaeToDiWorld" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li> <a href="https://twitter.com/ReggaeMarleyBob?ref_src=twsrc%5Etfw" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li> <a href="https://plus.google.com/communities/104650884745104291891" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                <li> <a href="https://uk.pinterest.com/explore/rum-shop/" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                <li> <a href="https://www.youtube.com/watch?v=9-onZECHMYo" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
 
 
 
@@ -65,6 +75,6 @@
 	<script src="js/app.js"></script>
 	<script src="js/controller.js"></script>
 	<!-- <script src="js/service.js"></script> -->
-	<!-- <script src="js/directive.js"></script> -->
+	<script src="js/directive.js"></script>
 </body>
 </html>

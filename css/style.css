@@ -1,44 +1,391 @@
+/*ALL PAGES*/
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+	/*background-color: black;*/
+	background-image: url(/img/reggaeback.jpg);
+	background-size: 100% 100%;
+	background-position: center;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+	font-family: "Nunito";
+
+	color: #e7d506;
+}
+
+h1 {
+	font-weight: bolder;
+}
+
+div h1 {
+	color: #e7d506;
+	text-align: center;
+}
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	/*display: none;*/
+	opacity: 1;
+}
+
+.visible-hr {
+	opacity: 1;
+	background-color: #e7d506;
+	font-color: red;
+
+}
+
+
+
+/*NAVBAR STYLING*/
+
+/*Navbar dropdown toggles on hover on desktop*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .navbar .navbar-nav {
   display: inline-block;
   float: none;
   vertical-align: top;
+  /*background-color: white;*/
 
 }
 
-.navbar.navbar-default {
+.navbar.navbar-inverse {
 	margin-bottom: 0;
+	border-radius: 0;
+	/*background-color: white;*/
 }
 
 .navbar .navbar-collapse {
   text-align: center;
+  /*background-color: white;*/
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-inverse .navbar-nav>li>a {
     padding: 15px 25px;
+    /*font-family: Nunito;*/
+    font-size:12px;
+    font-weight: bold;
+    /*background-color: white;*/
+}
+
+ul.dropdown-menu {
+	background-color: #222222;
+}
+
+.dropdown-menu>li>a{
+	color: #9d9d9d;
+}
+
+/*FOOTER STYLING*/
+
+.footer {
+	margin-right: auto;
+	margin-left: auto;
+	width: 270px;
+	text-align: center;
+	/*background-color: #222222;*/
+}
+
+.footer ul {
+	font-size: 13px;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 15px;
+	color: #7F8C8D;
+}
+.footer ul li a {
+	padding: 0 0 5px 0;
+	display: block;
+}
+.footer a {
+	color: #78828D
+}
+
+.social li {
+	background: none repeat scroll 0 0 #9d9d9d;
+	border: 2px solid #e7d506;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	float: left;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 12px 0 0;
+	padding: 0;
+	text-align: center;
+	width: 36px;
+	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-ms-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+}
+.social li:hover {
+	transform: scale(1.15) rotate(360deg);
+	-webkit-transform: scale(1.1) rotate(360deg);
+	-moz-transform: scale(1.1) rotate(360deg);
+	-ms-transform: scale(1.1) rotate(360deg);
+	-o-transform: scale(1.1) rotate(360deg);
+}
+.social li a {
+	color: white;
+}
+.social li:hover {
+	border: 2px solid #2c3e50;
+	background: #e7d506;
+}
+.social li a i {
+	font-size: 16px;
+	margin: 0;
+	color: white !important;
+}
+
+/*MODALS*/
+
+div.modal-content {
+	background-image: url(/img/jamaica.jpg);
 }
 
 
 
+/*HOMEPAGE */
 
-
-
-.uib-carousel {
-	height: 50%;
-	position: relative;
-}
-
-.item,
-.active,
-.carousel-inner {
-    height: 100%;
-}
-
-img.ng-scope {
-	height: 100%;
+/*HOMEPAGE BACKGROUND IMAGE ROTATOR*/
+#rotatorContainer {
 	width: 100%;
+	height: 300px;		
+	position: relative;
+}	
+
+#homeTitle{
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Rock Salt', cursive;
+	font-size: 34px;
+	text-shadow: 2px 0 0 #333, -2px 0 0 #333, 0 2px 0 #333, 0 -2px 0 #333, 2px 2px #333, -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333;
+}
+
+#homeTitle span{
+	/*font-family:'Nunito', cursive;*/
+	font-weight: bold;
+}
+
+#rotatorImg1{
+	background-image: url("/img/CGdamianmarley.jpg");
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+#rotatorImg2{
+	background-image: url("/img/CGjimmycliff.jpg");
+	width: 100%;
+	height: 100%;
+	position: absolute;
 	background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+}
+#rotatorImg3{
+	background-image: url("/img/CGbobmarley.jpg");
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.hide-small {
+	display: none;
+}
+	
+/*BANDPAGE*/
+
+span.bandpage-member-header{
+	font-size: 30px;
+}
+
+/*div h1 {
+	text-align: center;
+	color: #9d9d9d;
+}*/
+
+.hoverP {
+	/*not visible on mobile & touchscreen devices*/
+	display: none;
+	color: #9d9d9d;
+}
+
+
+.bandpage-paragraphs {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.img-responsive {
+	border-radius: 5px;
+	width: 100%;
+}
+
+/*GIGS PAGE*/
+
+div.panel-default.ng-scope.ng-isolate-scope.panel {
+	border-radius: 0;
+	margin: 20px 0px 20px 0px;
+}
+
+#gigs-page-image-grid {
+	padding-top: 25px;
+	display: none;
+}
+
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+/*// css specific properties col-lg-**/
+
+
+
+
+/*HOMEPAGE*/
+
+#homeTitle{
+	font-size: 60px;
+}
+#homeTitle span{
+	font-size: 60px;
+}
+
+.hide-small {
+	display: block;
+}
+
+
+/*BANDPAGE*/
+
+.hoverP {
+	display: block;
+	text-align: center;
+	margin-top: -15px;
+}
+
+.bandpage-paragraphs{
+	position: absolute;
+	overflow: hidden;
+	top: 0;
+	opacity: 0;
+	width: 46vw;
+	height: 100%;
+	/*border: 1px solid red;*/
+	padding: 80px 30px 0 30px;
+}
+
+/*.show-paragraphs {
+	-webkit-transition: all 1000ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	transition: all 1000ms cubic-bezier(0.47, 0, 0.745, 0.715);		
+}*/
+
+.show-paragraphs p {
+	-webkit-transition: all 1000ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	transition: all 1000ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	opacity: 1;
+	color: #e7d506;
+	text-shadow: 1px 0 0 #333, -1px 0 0 #333, 0 1px 0 #333, 0 -1px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
+
+}
+
+.show-paragraphs img {
+	-webkit-transition: all 1000ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	transition: all 1000ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	-webkit-filter:grayscale(1);
+}
+
+/*GIGS PAGE*/
+
+#gigs-page-image-grid {
+	display: block;
+}
+
+
+}
+
+ 
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+/*// css specific properties col-md-**/
+
+/*HOMEPAGE*/
+
+.hide-small {
+	display: block;
+}
+
+/*GIGSPAGE*/
+
+#gigs-page-image-grid {
+	display: block;
+}
+
+}
+ 
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+/*// css specific properties col-sm-**/
+
+
+/*BANDPAGE*/
+img.img-responsive {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+}
+ 
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+/*// css specific properties col-xs-**/
+
+
+
+/*BANDPAGE*/
+img.img-responsive {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+}
+ 
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+/*// css specific properties col-xs-* or none for default*/
 }

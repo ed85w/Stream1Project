@@ -51,16 +51,16 @@ hr {
 }
 
 .navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-  /*background-color: white;*/
-
+	display: inline-block;
+	float: none;
+	vertical-align: top;
+	margin-bottom: 0;
+	border-radius: 0;
+	height: 200px;
 }
 
 .navbar.navbar-inverse {
-	margin-bottom: 0;
-	border-radius: 0;
+
 	/*background-color: white;*/
 }
 
@@ -155,7 +155,7 @@ ul.dropdown-menu {
 /*MODALS*/
 
 div.modal-content {
-	background-image: url(/img/jamaica.jpg);
+	/*background-image: url(/img/jamaica.jpg);*/
 }
 
 

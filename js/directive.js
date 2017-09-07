@@ -1,4 +1,3 @@
-// (function(){
 
 angular.module('ContactDirective',[]).directive('contactDetails', function() {
   return {
@@ -7,4 +6,3 @@ angular.module('ContactDirective',[]).directive('contactDetails', function() {
   };
 });
 
-// })();

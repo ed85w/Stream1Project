@@ -24,4 +24,3 @@ angular.module('BandSite').config(function($routeProvider) {
         controller: 'ContactController'
     });
 });
-

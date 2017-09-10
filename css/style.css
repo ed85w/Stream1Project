@@ -70,7 +70,6 @@ ul.nav.navbar-nav {
     padding: 15px 25px;
     font-size:14px;
     font-weight: bold;
-    /*text-shadow: 1px 0 0 #333, -1px 0 0 #333, 0 1px 0 #333, 0 -1px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;*/
 }
 
 .nav>li>a:hover,
@@ -118,11 +117,12 @@ span.icon-bar {
 .footer {
 	margin-right: auto;
 	margin-left: auto;
+	margin-bottom: 20px;
 	width: 270px;
 	text-align: center;
-	/*background-color: #222222;*/
 }
 
+/*social media icons w spin on hover*/
 .footer ul {
 	font-size: 13px;
 	list-style-type: none;
@@ -139,7 +139,6 @@ span.icon-bar {
 	color: #78828D
 }
 
-/*SOCIAL MEDIA ICONS W/ SPIN EFFECT*/
 .social li {
 	background: none repeat scroll 0 0 black;
 	border: 2px solid #e7d506;
@@ -198,7 +197,7 @@ div.modal-content {
 	position: relative;
 	border-top: 2px solid black;
 	border-bottom: 2px solid black;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }	
 
 #homeTitle{
@@ -254,25 +253,49 @@ div.modal-content {
 /*END OF IMAGE ROTATOR*/
 
 #home-div{
+	margin: 40px 0 40px 0;
+	padding: 20px 0 20px 0;
 	background-color: black;
+	color: white;
 }
 
-h5 {
-	text-align: left;
+#home-div h1,
+#home-div h2 {
+	text-shadow: none;
+}
+
+div h2 {
+	font-family: "Nunito", "Arial";
+	text-align: center;
+	text-shadow: 2px 0 0 #333, -2px 0 0 #333, 0 2px 0 #333, 0 -2px 0 #333, 2px 2px #333, -2px -2px 0 #333, 2px -2px 0 #333, -2px 2px 0 #333;
+}
+
+div p {
 	margin-top: 20px;
 	margin-bottom: 20px;
 	color: white;
 }	
 
-#home-page-image-grid {
+
+#next-gig-div {
+	margin: 30px 0 30px 0;
+	padding: 0;
+}
+
+iframe {
 	margin-top: 20px;
-	margin-bottom: 20px;
+}
+
+#next-gig-button {
+	margin-right: auto;
+	margin-left: auto;
 }
 
 /*BANDPAGE*/
 
 span.bandpage-member-header{
 	font-size: 30px;
+	font-family: 'Rock Salt', cursive;
 }
 
 .hoverP {
@@ -282,12 +305,17 @@ span.bandpage-member-header{
 	text-shadow: 1px 0 0 #333, -1px 0 0 #333, 0 1px 0 #333, 0 -1px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
 }
 
+.bandpage-para-div {
+	background-color: black;
+	border-radius: 1px;
+}
 
 .bandpage-paragraphs {
 	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
 	text-shadow: 1px 0 0 #333, -1px 0 0 #333, 0 1px 0 #333, 0 -1px 0 #333, 1px 1px #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333;
+	padding-bottom: 10px;
 }
 
 .img-responsive {
@@ -304,7 +332,7 @@ span.bandpage-member-header{
 
 
 /*youtube player*/
-iframe  {
+div div div iframe  {
 	border: 3px solid black;
 }
 
@@ -348,6 +376,10 @@ input {
 	color: black;
 	border: 1px solid black;
 	padding: 2px;
+}
+
+p.help-block {
+	text-align: left;
 }
 
 .btn-primary {
@@ -602,7 +634,6 @@ input {
 	#home-div{
 		margin-right: 10px;
 		margin-left:10px;
-		color: black;
 	}
 
 	/*BANDPAGE*/

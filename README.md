@@ -4,15 +4,16 @@
 
 ### Project Brief
 
-### Challenges Faced
+Create A Website For A Band
+Build a static (front-end only) website for a band.
 
-image change/carousel on home page
+The band has provided you, the developer, with the following assets that they would like to showcase on their website:
 
-text over img-responsive on band page
- 
-## Features
- 
-## Tech Used
+- Photos of the band members
+- A video clip
+- Audio clips
+
+The band would also like to publicise upcoming gigs in the future. They would like users to be able to contact them with potential work related leads.
 
 ### Some the tech used includes:
 - [AngularJS](https://angularjs.org/)
@@ -23,6 +24,32 @@ text over img-responsive on band page
     - **npm** was used to help manage some of the dependencies in the application
 - [bower](https://bower.io/)
     - **Bower** is used to manage the installation of libraries and frameworks
+
+### Testing
+
+The website has been tested in the following browsers;
+
+Google Chrome (inc developer tools)
+Mozilla Firefox (inc developer tools)
+Microsoft Edge
+Safari
+
+The website has been tested using the following mobile devices
+
+Sony Xperia X
+Sony Xperia XC
+iPhone 5C
+iPhone 6
+
+### Challenges Faced
+
+image change/carousel on home page
+
+text over img-responsive on band page
+
+twitter feed
+
+fixed no repeat background image on mobile
  
 ## Contributing
 

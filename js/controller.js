@@ -87,14 +87,10 @@ angular.module('RouteControllers', [])
 		  ];
 
 	})
-	.controller('MusicController', function($scope){
-		//allows hash linking - link to video player on music page
-		$scope.scrollTo = function(id) {
-			var old = $location.hash();
-			$location.hash(id);
-			$anchorScroll();
-			$location.hash(old);
-		};
+	.controller('MusicController', function($scope, $anchorScroll){
+		//link to video player on music page
+		$anchorScroll();
+
 
 	})
 	.controller('ContactController', function ($scope){

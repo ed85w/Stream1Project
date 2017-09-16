@@ -17,7 +17,7 @@ body:before {
 	width: 100%;
 	height: 100%;
 	z-index: -10;
-	background: url(/Stream1Project/img/wood5.jpg) no-repeat center center;
+	background: url(../img/wood5.jpg) no-repeat center center;
 	-webkit-background-size: 100% 100%;
 	-moz-background-size: 100% 100%;
 	-o-background-size: 100% 100%;
@@ -217,7 +217,7 @@ div.modal-content {
 }
 
 #rotatorImg1{
-	background-image: url(/Stream1Project/img/CGdamianmarley.jpg);
+	background-image: url(../img/CGdamianmarley.jpg);
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -228,7 +228,7 @@ div.modal-content {
 	-o-background-size: cover;
 }
 #rotatorImg2{
-	background-image: url(/Stream1Project/img/CGjimmycliff.jpg);
+	background-image: url(../img/CGjimmycliff.jpg);
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -239,7 +239,7 @@ div.modal-content {
     -o-background-size: cover;
 }
 #rotatorImg3{
-	background-image: url(/Stream1Project/img/CGbobmarley.jpg);
+	background-image: url(../img/CGbobmarley.jpg);
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -254,7 +254,7 @@ div.modal-content {
 
 #home-div{
 	margin: 40px 0 40px 0;
-	padding: 20px 0 20px 0;
+	padding: 20px 5px 20px 5px;
 	background-color: black;
 	color: white;
 }

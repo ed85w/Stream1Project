@@ -90,8 +90,6 @@ angular.module('RouteControllers', [])
 	.controller('MusicController', function($scope, $anchorScroll){
 		//link to video player on music page
 		$anchorScroll();
-
-
 	})
 	.controller('ContactController', function ($scope){
 		// ##### Simple example 1 #####

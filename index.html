@@ -98,5 +98,15 @@
 	<script src="js/controller.js"></script>
 	<!-- <script src="js/service.js"></script> -->
 	<script src="js/directive.js"></script>
+
+	<script type="text/javascript">
+		// angular was overiding collapse on nav selection in mobile view 
+		$(document).on('click','.navbar-collapse.in',function(e) {
+    		if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
+        		$(this).collapse('hide').delay(180);
+    			}
+		});
+	</script>
+	
 </body>
 </html>

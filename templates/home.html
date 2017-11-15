@@ -4,63 +4,58 @@
 	<div id="rotatorImg3"></div>
 	<h1 id="homeTitle">Reggae<span>BAND</span></h1>
 </div>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<h1>REGGAE COVER BAND</h1>
-			<p>
-				This page is for a fictional reggae cover band (so don't try to book them, even though they sound amazing!). This page has been created using AngularJS, Bootstrap and JQuery. 
-			</p>
-			<hr>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
-			
-		</div>
-		
-	</div>
-	<hr>
-	<div class="row" id="home-page-image-grid">
-		<div class="col-md-3 thumb">
-	        <a class="thumbnail">
-	            <img class="img-responsive" src="img/GPdamianmarley.jpg" alt="Damian Marley">
-	        </a>
-        </div>
-        <div class="col-md-3 thumb hide-small show-med">
-	        <a class="thumbnail">
-	            <img class="img-responsive" src="img/GPjamaica.jpg" alt="Jamaica Flag">
-	        </a>
-        </div>
-        <div class="col-md-3 thumb hide-small">
-	        <a class="thumbnail">
-	            <img class="img-responsive" src="img/GPlion.jpg" alt="Lion">
-	        </a>
-        </div>
-        <div class="col-md-3 thumb hide-small">
-	        <a class="thumbnail">
-	            <img class="img-responsive" src="img/GPjimmycliff.jpg" alt="Jimmy Cliff">
-	        </a>
-        </div>
-	</div>
-<!-- </div>
-<div class="container-fluid">
-<div class="row">
-	<div class="col-md-6 col-sm-6" style="padding: 0; margin: 0;">
-		<img src="img/GPdamianmarley.jpg" width="100%" style="padding: 0; margin: 0;">
-	</div>
-	<div class="col-md-6 col-sm-6" style="padding: 0; margin: 0;">
-		<img src="img/GPjimmycliff.jpg" width="100%" style="padding: 0; margin: 0;">
-	</div>
-</div>
-</div> -->
 
-	<!-- DIRECTIVE USED FOR CONTACT DETAILS -->
-	<div contact-details></div>
+	
+
+<div class="container-fluid" id="home-div">
+	<h1>A Fictional Cover Band</h1>
+	<h2>Est. 01/02/2017</h2>	
+	<p>
+		This page is for a fictional reggae cover band (so don't try to book them, even though they sound amazing!).  
+	</p>
+	<p>
+		This page has been created using AngularJS, Bootstrap and JQuery.
+	</p>
 </div>
+
+<div class="container-fluid" id="next-gig-div">
+	<h1>Next Gig</h1>
+	<h2>{{nextGigDate}}</h2>
+	<h2>{{nextGigCity}}, {{nextGigVenue}}</h2>
+	<!-- <h2>{{nextGigVenue}}</h2> -->
+	<iframe ng-src="{{nextGigMap}}" style="width: 100%; height: 400px" frameborder="0" marginheight="0" marginwidth="0"></iframe>
+	<div class="text-center">
+		<button type="button" class="btn btn-primary" ng-model="singleModel" data-toggle="modal" data-target="#NextGigModal" id="next-gig-button">
+			Buy Tickets {{nextGigPrice | currency:"£"}}
+		</button>
+	</div>
+
+	<!-- MODAL FOR TICKET BUTTON --> 
+	<div id="NextGigModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+			<!-- MODAL CONTENT-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Modal Example</h4>
+				</div>
+				<div class="modal-body">
+					<p>Hello! Unfortunately, as this is a website for a fictional cover band there aren't actually any tickets on sale!</p>
+					<p>This is just an example to show the kind of thing that could be produced.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+</div>
+
+
+
+
 
 

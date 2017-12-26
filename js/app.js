@@ -1,8 +1,8 @@
 
 var BandSite = angular.module('BandSite', ['ngRoute', 'RouteControllers','ngAnimate','ui.bootstrap','ngSanitize','ContactDirective']);
  
-angular.module('BandSite').config(function($routeProvider) {
- 
+angular.module('BandSite').config(function($locationProvider, $routeProvider) {
+    $locationProvider.html5Mode(true);  // Enable href routing without hashes
     $routeProvider.when('/', {
         templateUrl: 'templates/home.html',
         controller: 'HomeController'
